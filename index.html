@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interactive Rating Component</title>
+    <link rel="stylesheet" href="assets/style.css">
+
+    <script src="assets/script.js"></script>
+</head>
+<body>
+    <main class="container">
+        <section class="card_container card_submit">
+            <img class="icon_star" src="./images/icon-star.svg" alt="icone estrela">
+            <h2>How did we do?</h2>
+            <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            
+
+            <div class="lista">
+                <button class="opcoes" onclick="selecionar(1)">1</button>
+                <button class="opcoes" onclick="selecionar(2)">2</button>
+                <button class="opcoes" onclick="selecionar(3)">3</button>
+                <button class="opcoes" onclick="selecionar(4)">4</button>
+                <button class="opcoes" onclick="selecionar(5)">5</button>
+            </div>
+
+            <button id="botao" onclick="telaThankyou()">Submit</button>
+        </section>
+        <section class="card_container card_thankyou">
+            <img src="./images/illustration-thank-you.svg" alt="">
+            <p id="resposta_select">You selected ? out of 5</p>
+            <h2>Thank You</h2>
+            <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+        </section>
+    </main>
+</body>
+</html>

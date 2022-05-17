@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --orange-color: hsl(25, 97%, 53%);
+    --white-color: hsl(0, 0%, 100%);
+    --light-grey-color: hsl(217, 12%, 63%);
+    --medium-grey-color: hsl(216, 12%, 54%);
+    --dark-blue-color: hsl(213, 19%, 18%);
+    --very-dark-blue-color: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    background: var(--very-dark-blue-color);
+    color: var(--light-grey-color);
+}
+
+.container {
+    height: 100vh;
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_container {
+    width: 412px;
+    height: 416px;
+    background: rgb(35,42,52);
+    background: linear-gradient(180deg, rgba(35,42,52,1) 5%, rgba(24,30,39,1) 64%);
+    border-radius: 30px;
+    padding: 32px;
+}
+
+.icon_star {
+    background: var(--dark-blue-color);
+    padding: 16px;
+    border-radius: 50%;
+}
+
+.card_container h2 {
+    font-weight: 400;
+    font-size: 28px;
+    color: var(--white-color);
+    margin: 30px 0 7px 0;
+}
+
+.lista {
+    margin-top: 24px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.lista button {
+    background: var(--dark-blue-color);
+    padding: 16px 22px;
+    border-radius: 50%;
+    border: none;
+    color: var(--light-grey-color);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.lista button:hover {
+    background: var(--orange-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.lista button:focus {
+    background: var(--medium-grey-color);
+    color: var(--white-color);
+}
+
+#botao {
+    margin-top: 32px;
+    width: 341px;
+    height: 45px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--white-color);
+    text-transform: uppercase;
+    background: var(--orange-color);
+    cursor: pointer;
+    transition: 1s all;
+}
+
+#botao:hover {
+    background: var(--white-color);
+    color: var(--orange-color);
+}
+
+#resposta_select {
+    margin-top: 50px;
+    color: var(--orange-color);
+    background: var(--dark-blue-color);
+    padding: 2px 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.card_thankyou {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card_thankyou img {
+    margin-top: 13px;
+}
+
+.card_thankyou p {
+    text-align: center;
+}
+
+.card_container p {
+    line-height: 24px;
+}
+
+@media (max-width: 764px)
+{
+  .container {
+      width: auto;
+  }
+
+  .card_container {
+      width: 327px;
+      height: 360px;
+  }
+}
